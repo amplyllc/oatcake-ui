@@ -17,6 +17,8 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
 
+    eleventyConfig.setUseGitIgnore(false);
+
     eleventyConfig.setLibrary("md",
         markdownIt({
             html: true,
