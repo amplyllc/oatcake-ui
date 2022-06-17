@@ -1,0 +1,28 @@
+.banner {
+    background-color: map.get($theme-colors, "primary");
+    color: map.get($theme-colors, "white");
+    width: 100%;
+    border-radius: 10px;
+
+    img {
+        display: none;
+
+        @include media-md {
+            display: block;
+        }
+    }
+    .one {
+        width: 100%; 
+
+        @include media-md {
+            width: 70%;
+        }
+    }
+    .two {
+        width: 100%; 
+
+        @include media-md {
+            width: 30%;
+        }
+    }
+}
