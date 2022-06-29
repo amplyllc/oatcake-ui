@@ -2,23 +2,37 @@
 <html lang="en">
 <head>
     <title>Oatcake UI | Sass Component Library for JAMstack</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.png"/>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Oatcake UI is a free and open source Sass UI component library with resources for developers and small business owners.">
-    <meta name="keywords" content="HTML, CSS, HTML5, SCSS, Sass, UI, Components, JAMstack, Static, Serverless">
+    <link rel="canonical" href="https://ui.oatcake.org">
     <meta name="author" content="Amply LLC">
+    <meta name="description" content="Oatcake UI is a free and open source Sass UI component library with resources for developers and small business owners.">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#82204a">
+    <meta name="theme-color" content="#82204a">
+
     <meta property="og:title" content="Oatcake UI" />
     <meta property="og:description" content="Oatcake UI is a Sass component library, use it with JAM!" />
-    <meta property="og:type" content="website"/>
-    <!-- <meta property="og:image" content="https://website.com/img/ogimage.png"/> -->
-    <!-- <meta property="og:url" content="https://website.com" /> -->
-    <!-- <meta name="twitter:image:src" content="https://website.com/img/ogimage.png"> -->
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content="https://amply.llc/"/>
+    <!-- <meta property="og:image" content="/assets/img/ogimage.png"/> -->
+    <!-- <meta property="og:image:secure_url" content="/assets/img/social.jpg"/> -->
+    <!-- <meta name="twitter:image:src" content="/assets/img/ogimage.png"> -->
 
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/fira-sans" type="text/css"/>    
+    <!-- <link rel="preload" as="image" href="/assets/img/background.webp"> -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/fira-sans" type="text/css"/>   
     <link rel="stylesheet" href="/assets/css/main.min.css">
+
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/local.css">
+    </noscript>
 </head>
 <body>
 
@@ -56,6 +70,24 @@
 
     <main>
         
+<button id="modal-btn" class="d-none"></button>
+
+
+<div id="modal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="d-flex flex-column default text-center">
+        <img src="/assets/img/oatcake-small.png" alt="logo" class="py-1" style="width: 60px;">
+        <h1>Oatcake UI</h1>
+        <p class="w-80 py-1">Oatcake UI is a growing but unfinished UI library hosted for demo purposes only. Feel free to take a look around!</p>
+        <a href="/docs/getting-started/introduction" class="button rounded default primary">Read the Docs</a>
+    </div>
+  </div>
+
+</div>
+
+
 <!-- landing -->
 <section id="landing">
     <div class="split">
@@ -63,8 +95,8 @@
             <h1 class="text-black">Use <span class="text-secondary">Oatcake UI</span> with <span class="text-primary">JAM!</span></h1>
             <p>Oatcake is a free and open source Sass UI Component Library that fits perfectly into the JAMstack.</p>
             <div class="d-flex default">
-                <a href="docs/introduction/get-started" class="button rounded default secondary shadow me-1">Get Started</a>
-                <a href="docs/introduction/download" class="button rounded default secondary outline">Download</a>
+                <a href="docs/getting-started/introduction" class="button rounded default secondary shadow me-1">Get Started</a>
+                <a href="docs/getting-started/download" class="button rounded default secondary outline">Download</a>
             </div>
         </div>
         <div class="two">
@@ -164,6 +196,11 @@
     </div>
 </section><!-- /banner -->
 
+<script type = "text/javascript">  
+window.onload = function(){  
+document.getElementById("modal").style.display = "block";
+}  
+</script> 
 
     </main>
 
